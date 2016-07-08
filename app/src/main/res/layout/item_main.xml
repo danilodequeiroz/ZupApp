@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_main_item_father"
+    android:layout_width="match_parent">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp">
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+
+            android:id="@+id/drawee_main_item_poster"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|top"
+            android:layout_alignParentTop="@id/drawee_result_bg"
+            android:layout_marginRight="6dp"
+            android:contentDescription="@string/item_main_content_description_icon"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/placeholder_poster"
+            fresco:placeholderImageScaleType="centerCrop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp">
+
+            <TextView
+                android:id="@+id/txtview_main_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/item_main_placeholder_text_contact_data"
+                />
+
+            <TextView
+                android:id="@+id/txtview_main_item_director"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/item_main_placeholder_text_contact_description" />
+
+            <TextView
+                android:id="@+id/txtview_main_item_genre_year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/item_main_placeholder_text_contact_description"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

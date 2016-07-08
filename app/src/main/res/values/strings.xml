@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_main_placeholder_text_contact_data">+55 (13) 999777222</string>
+    <string name="item_main_placeholder_text_contact_description">Phone number</string>
+    <string name="item_main_content_description_icon">Item icon</string>
+    <string name="str_dlg_actv_main_input_film">Movie name</string>
+    <string name="str_dlg_actv_main_input_year">Year (optional)</string>
+    <string name="str_dlg_actv_main_query_positive">Search</string>
+    <string name="str_dlg_actv_main_query_negative">Dismiss</string>
+    <string name="str_dlg_actv_main_query_message">Movies search</string>
+    <string name="loading">Loading...</string>
+    <string name="service_failure">Service error, try again later...</string>
+    <string name="str_toast_no_movie">Movie not found</string>
+    <string name="title_activity_result">Movie info</string>
+    <string name="app_name">SEED APP</string>
+
+    <string name="str_detail_plot">Plot: \u0020</string>
+    <string name="str_detail_year">Year: \u0020</string>
+    <string name="str_detail_runtime">Runtime: \u0020</string>
+    <string name="str_detail_country">Country: \u0020 </string>
+    <string name="str_detail_director">Directors: \u0020 </string>
+    <string name="str_detail_writer">Writer: \u0020 </string>
+    <string name="str_detail_cast">Actors: \u0020</string>
+    <string name="str_detail_imdb">Score e votes (imdb): \u0020</string>
+
+    <string name="title_activity_nova">NovaActivity</string>
+
+</resources>

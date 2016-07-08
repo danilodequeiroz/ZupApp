@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_main_placeholder_text_contact_data">+55 (13) 999777222</string>
+    <string name="item_main_placeholder_text_contact_description">Número de telefone</string>
+    <string name="item_main_content_description_icon">Ícone do item</string>
+    <string name="str_dlg_actv_main_input_film">Nome do filme</string>
+    <string name="str_dlg_actv_main_input_year">Ano (opcional)</string>
+    <string name="str_dlg_actv_main_query_positive">Pesquisar</string>
+    <string name="str_dlg_actv_main_query_negative">Cancelar</string>
+    <string name="str_dlg_actv_main_query_message">Pesquisa de filmes</string>
+    <string name="loading">Carregando...</string>
+    <string name="service_failure">Erro de serviço, tente mais tarte...</string>
+    <string name="str_toast_no_movie" >Filme não encontrado</string>
+    <string name="title_activity_result">Dados do Filme</string>
+    <string name="str_detail_plot">Enredo: \u0020</string>
+    <string name="str_detail_year">Ano: \u0020</string>
+    <string name="str_detail_runtime">Duração: \u0020</string>
+    <string name="str_detail_country">País: \u0020</string>
+    <string name="str_detail_director">Diretores: \u0020</string>
+    <string name="str_detail_writer">Escritores: \u0020</string>
+    <string name="str_detail_cast">Atores: \u0020</string>
+    <string name="str_detail_imdb">Nota e votos (imdb): \u0020</string>
+
+    note
+
+</resources>
