@@ -2,6 +2,7 @@ package com.brutcode.seedapp;
 
 import android.content.Context;
 
+import com.brutcode.seedapp.model.Content;
 import com.snappydb.DB;
 import com.snappydb.DBFactory;
 import com.snappydb.SnappydbException;
@@ -38,12 +39,22 @@ public class MySnappyDb {
         return instance;
     }
 
-
+    public boolean contains(Content content){
+        boolean returnValue = false;
+        try {
+            Content c = mSnappyDB.getObject(generateKey(content.getImdbID()), Content.class);
+            if(c != null)
+                returnValue = content.equals(c);
+        } catch (SnappydbException e) {
+            e.printStackTrace();
+        }
+        return returnValue;
+    }
 
     public boolean insertContent(Content content){
         boolean returnValue = false;
         try {
-            mSnappyDB.put(generateKey(content.hashCode()),content);
+            mSnappyDB.put(generateKey(content.getImdbID()),content);
             returnValue = true;
             mSnappyDB.close();
         } catch (SnappydbException e) {
@@ -55,7 +66,7 @@ public class MySnappyDb {
 
     public boolean removeContent(Content content){
         try {
-            mSnappyDB.del(generateKey(content.hashCode()));
+            mSnappyDB.del(generateKey(content.getImdbID()));
             mSnappyDB.close();
         } catch (SnappydbException e) {
             e.printStackTrace();
@@ -79,10 +90,10 @@ public class MySnappyDb {
         return contents;
     }
 
-    public Content getContentByKey(int hashCode){
+    public Content getContentByKey(String imdb){
         Content content = null;
         try {
-            content = mSnappyDB.getObject(generateKey(hashCode),Content.class);
+            content = mSnappyDB.getObject(generateKey(imdb),Content.class);
             mSnappyDB.close();
         } catch (SnappydbException e) {
             e.printStackTrace();
@@ -91,8 +102,8 @@ public class MySnappyDb {
     }
 
     
-    private String generateKey(int hashCode){
-        String key = CONTENT_PREFIX + Integer.toString(hashCode);
+    private String generateKey(String imdb){
+        String key = CONTENT_PREFIX + imdb;
         return key;
     }
 }

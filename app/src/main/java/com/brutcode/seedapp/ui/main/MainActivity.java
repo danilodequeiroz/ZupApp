@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.brutcode.seedapp.Constants;
-import com.brutcode.seedapp.Content;
+import com.brutcode.seedapp.model.Content;
 import com.brutcode.seedapp.ContentAdapter;
 import com.brutcode.seedapp.MySnappyDb;
 import com.brutcode.seedapp.R;
@@ -126,11 +126,13 @@ public class MainActivity extends BaseActivity implements MainView, ContentAdapt
     }
 
     @Override
-    public void presentContent(Content content) {
-        MySnappyDb.getInstance(this).insertContent(content);
-        ((ContentAdapter)mRecycler.getAdapter()).insertOneItem(content);
+    public void presentContent(boolean contains , Content content) {
+        if(!contains) {
+            ((ContentAdapter) mRecycler.getAdapter()).insertOneItem(content);
+        }else {
+            longToast(R.string.str_toast_movie_already);
+        }
         hideProgress();
-
     }
 
     @Override

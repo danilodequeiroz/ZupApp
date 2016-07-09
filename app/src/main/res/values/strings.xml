@@ -11,6 +11,7 @@
     <string name="loading">Loading...</string>
     <string name="service_failure">Service error, try again later...</string>
     <string name="str_toast_no_movie">Movie not found</string>
+    <string name="str_toast_movie_already">Movie already stored</string>
     <string name="title_activity_result">Movie info</string>
     <string name="app_name">SEED APP</string>
 

@@ -10,7 +10,7 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.brutcode.seedapp.Constants;
-import com.brutcode.seedapp.Content;
+import com.brutcode.seedapp.model.Content;
 import com.brutcode.seedapp.R;
 import com.brutcode.seedapp.databinding.ActivityResultBinding;
 import com.brutcode.seedapp.ui.BaseActivity;

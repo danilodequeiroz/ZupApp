@@ -1,4 +1,4 @@
-package com.brutcode.seedapp;
+package com.brutcode.seedapp.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

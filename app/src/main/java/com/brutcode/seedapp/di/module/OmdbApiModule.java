@@ -1,6 +1,6 @@
 package com.brutcode.seedapp.di.module;
 
-import com.brutcode.seedapp.Content;
+import com.brutcode.seedapp.model.Content;
 import com.brutcode.seedapp.di.scope.UserScope;
 
 import dagger.Module;

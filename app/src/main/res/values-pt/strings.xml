@@ -11,6 +11,7 @@
     <string name="loading">Carregando...</string>
     <string name="service_failure">Erro de serviço, tente mais tarte...</string>
     <string name="str_toast_no_movie" >Filme não encontrado</string>
+    <string name="str_toast_movie_already">Filme já consta</string>
     <string name="title_activity_result">Dados do Filme</string>
     <string name="str_detail_plot">Enredo: \u0020</string>
     <string name="str_detail_year">Ano: \u0020</string>

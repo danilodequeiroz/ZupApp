@@ -3,11 +3,11 @@ package com.brutcode.seedapp.presenter;
 import android.net.Uri;
 import android.util.Log;
 
-import com.brutcode.seedapp.Content;
 import com.brutcode.seedapp.MyApp;
 import com.brutcode.seedapp.MySnappyDb;
 import com.brutcode.seedapp.R;
 import com.brutcode.seedapp.di.module.OmdbApiModule;
+import com.brutcode.seedapp.model.Content;
 import com.brutcode.seedapp.view.MainView;
 import com.facebook.binaryresource.BinaryResource;
 import com.facebook.binaryresource.FileBinaryResource;
@@ -72,7 +72,6 @@ public class MainPresenter implements Presenter<MainView> {
                         if (mContent == null) {
                             mView.longToast(R.string.service_failure);
                         } else if (mContent.response.equals("True")) {
-                            MySnappyDb.getInstance(mView.getViewContext()).insertContent(mContent);
                             getMoviePoster(mContent);
                         } else {
                             mView.longToast(R.string.str_toast_no_movie);
@@ -120,7 +119,11 @@ public class MainPresenter implements Presenter<MainView> {
                         mView.runOnUi(new Runnable() {
                             @Override
                             public void run() {
-                                mView.presentContent(content);
+                                boolean contains = MySnappyDb.getInstance(mView.getViewContext()).contains(content);
+                                if(!contains) {
+                                    MySnappyDb.getInstance(mView.getViewContext()).insertContent(content);
+                                }
+                                mView.presentContent(contains,content);
                             }
                         });
                     }

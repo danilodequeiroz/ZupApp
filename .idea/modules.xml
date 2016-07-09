@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SeedApp.iml" filepath="$PROJECT_DIR$/SeedApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZupApp.iml" filepath="$PROJECT_DIR$/ZupApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -24,10 +24,6 @@
             android:name=".ui.result.ResultActivity"
             android:label="@string/title_activity_result"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".NovaActivity"
-            android:label="@string/title_activity_nova"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
